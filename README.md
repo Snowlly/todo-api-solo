@@ -10,5 +10,7 @@ Créer une API REST de gestion de tâches, dockerisée avec MongoDB.
 
 # Lancement du projet
 
+Attention : il n'y a pas de node_modules, il faut l'installer avant de lancer l'API
+
 ```bash
 docker-compose up --build
