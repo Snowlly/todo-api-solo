@@ -17,11 +17,13 @@ Il sert de base pour des automatisations futures (CI/CD) dans un contexte DevOps
 ---
 
 
-### Prérequis
+## Prérequis
 
 - Docker Desktop installé et le lancer
 
-### Installation & exécution
+---
+
+## Installation & exécution
 
 Dans le dossier du projet :
 
@@ -49,7 +51,7 @@ La réponse devrait être sous cette forme :
 }
 ```
 
---
+---
 
 ## Routes de l'API
 
@@ -77,5 +79,48 @@ Modifier une tâche
 ```
 #### DELETE /api/tasks/:id
 Supprimer une tâche
+
+### Modèle de données
+
+{
+  "_id": "uuid",
+  "title": "string",
+  "description": "string",
+  "status": "todo | in-progress | done",
+  "createdAt": "timestamp",
+  "updatedAt": "timestamp"
+}
+
+---
+
+## Structure du projet
+
+Le projet est structuré comme ceci :
+```bash
+todo-api/
+├── src/
+│   ├── routes/         # Routes Express
+│   ├── models/         # Modèle Mongoose
+│   ├── middleware/     # Gestion d’erreurs
+│   └── app.js          # App principale
+├── Dockerfile
+├── docker-compose.yml
+├── package.json
+└── README.md
+```
+## Gestion Agile (Kanban)
+
+GitHub Project (Kanban) :
+#### Voir le Kanban
+
+Lien vers le Kanban -> 
+
+Exemples de tickets utilisés :
+
+Créer le CRUD pour les tâches
+Dockeriser l’API avec MongoDB
+
+
+# Evan MARTIN
 
 
