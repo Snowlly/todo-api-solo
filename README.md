@@ -113,7 +113,7 @@ todo-api/
 GitHub Project (Kanban) :
 #### Voir le Kanban
 
-Lien vers le Kanban -> 
+Lien vers le Kanban -> https://github.com/users/Snowlly/projects/5
 
 Exemples de tickets utilisés :
 
