@@ -27,6 +27,7 @@ Dans le dossier du projet :
 
 ```bash
 docker-compose up --build
+```
 
 L’API sera disponible sur :
 http://localhost:3000
