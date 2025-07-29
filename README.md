@@ -1,16 +1,30 @@
-# todo-api-solo
+# Todo API - Projet Solo DevOps
 
-# Les Objectifs 
-Créer une API REST de gestion de tâches, dockerisée avec MongoDB.
+## les objectifs :
 
-# Fonctionnalités
--  CRUD complet (Créer, Lire, Modifier, Supprimer)
--  Dockerisation complète (Dockerfile, docker-compose.yml)
--  Structure MVC simple
+Ce projet est une **API REST** de gestion de tâches, développée avec **Node.js**, connectée à une base **MongoDB**, et entièrement **dockerisée**.  
+Il sert de base pour des automatisations futures (CI/CD) dans un contexte DevOps.
 
-# Lancement du projet
+---
 
-Attention : il n'y a pas de node_modules, il faut l'installer avant de lancer l'API
+## Stack technique :
+
+- Node.js + Express
+- MongoDB (via Docker)
+- Docker / Docker Compose
+- Postman (pour tester l’API)
+
+---
+
+
+### 🐳 Prérequis
+
+- Docker Desktop installé
+- Docker en cours d'exécution
+
+### 📦 Installation & exécution
+
+Dans le dossier du projet :
 
 ```bash
 docker-compose up --build
