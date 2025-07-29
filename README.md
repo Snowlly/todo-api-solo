@@ -17,12 +17,11 @@ Il sert de base pour des automatisations futures (CI/CD) dans un contexte DevOps
 ---
 
 
-### 🐳 Prérequis
+Prérequis
 
-- Docker Desktop installé
-- Docker en cours d'exécution
+- Docker Desktop installé et le lancer
 
-### 📦 Installation & exécution
+### Installation & exécution
 
 Dans le dossier du projet :
 
