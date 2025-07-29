@@ -1,48 +1,47 @@
-# Todo API - Projet Solo DevOps
+# Todo API - Solo DevOps Project
 
-## les objectifs :
+## Objectives:
 
-Ce projet est une **API REST** de gestion de tâches, développée avec **Node.js**, connectée à une base **MongoDB**, et entièrement **dockerisée**.  
-Il sert de base pour des automatisations futures (CI/CD) dans un contexte DevOps.
-
----
-
-## Stack technique :
-
-- Node.js + Express
-- MongoDB (via Docker)
-- Docker / Docker Compose
-- Postman (pour tester l’API)
+This project is a **REST API** for task management, developed with **Node.js**, connected to a **MongoDB** database, and fully **dockerized**.  
+It serves as a base for future automation (CI/CD) in a DevOps context.
 
 ---
 
+## Technical stack:
 
-## Prérequis
-
-- Docker Desktop installé et le lancer
+- Node.js + Express  
+- MongoDB (via Docker)  
+- Docker / Docker Compose  
+- Postman (to test the API)  
 
 ---
 
-## Installation & exécution
+## Prerequisites
 
-Dans le dossier du projet :
+- Docker Desktop installed and running
+
+---
+
+## Installation & execution
+
+In the project folder:
 
 ```bash
 docker-compose up --build
 ```
 
-L’API sera disponible sur :
+The API will be available at:
 
 http://localhost:3000
 
-Attention car si le port 3000 est déjà utilisé, le localhost sera sûrement sur un autre port.
+Be careful, if port 3000 is already in use, localhost will likely be on another port.
 
-### Test rapide
-Vérifie que l’API tourne :
+### Quick test
+Check that the API is running:
 
 GET http://localhost:3000/health
 
-La réponse devrait être sous cette forme :
+The response should look like this:
 
 ```bash
 {
@@ -53,10 +52,11 @@ La réponse devrait être sous cette forme :
 
 ---
 
-## Routes de l'API
+## API Routes
 
 #### POST /api/tasks
-Créer une tâche
+
+Create a task
 ```bash
 {
   "title": "Faire les courses",
@@ -65,22 +65,25 @@ Créer une tâche
 }
 ```
 #### GET /api/tasks
-Récupérer toutes les tâches
+
+Retrieve all tasks
 
 #### GET /api/tasks/:id
-Récupérer une tâche spécifique
+
+Retrieve a specific task
 
 #### PUT /api/tasks/:id
-Modifier une tâche
+
+Update a task
 ```bash
 {
   "status": "done"
 }
 ```
 #### DELETE /api/tasks/:id
-Supprimer une tâche
+Delete a task
 
-### Modèle de données
+### Task schema
 
 {
   "_id": "uuid",
@@ -93,9 +96,9 @@ Supprimer une tâche
 
 ---
 
-## Structure du projet
+## Project structure
 
-Le projet est structuré comme ceci :
+The project is structured as follows:
 ```bash
 todo-api/
 ├── src/
@@ -108,17 +111,17 @@ todo-api/
 ├── package.json
 └── README.md
 ```
-## Gestion Agile (Kanban)
+## Agile management (Kanban)
 
-GitHub Project (Kanban) :
-#### Voir le Kanban
+GitHub Project (Kanban):
+#### View the Kanban board
 
-Lien vers le Kanban -> https://github.com/users/Snowlly/projects/5
+Link to the Kanban -> https://github.com/users/Snowlly/projects/5
 
-Exemples de tickets utilisés :
+Example of tickets used:
 
-Créer le CRUD pour les tâches
-Dockeriser l’API avec MongoDB
+Create the CRUD for tasks
+Dockerize the API with MongoDB
 
 
 # Evan MARTIN
