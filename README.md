@@ -30,10 +30,52 @@ docker-compose up --build
 ```
 
 L’API sera disponible sur :
+
 http://localhost:3000
+
 Attention car si le port 3000 est déjà utilisé, le localhost sera sûrement sur un autre port.
 
 ### Test rapide
 Vérifie que l’API tourne :
 
 GET http://localhost:3000/health
+
+La réponse devrait être sous cette forme :
+
+```bash
+{
+  "status": "ok",
+  "timestamp": "..."
+}
+```
+
+--
+
+## Routes de l'API
+
+#### POST /api/tasks
+Créer une tâche
+```bash
+{
+  "title": "Faire les courses",
+  "description": "Acheter du pain",
+  "status": "todo"
+}
+```
+#### GET /api/tasks
+Récupérer toutes les tâches
+
+#### GET /api/tasks/:id
+Récupérer une tâche spécifique
+
+#### PUT /api/tasks/:id
+Modifier une tâche
+```bash
+{
+  "status": "done"
+}
+```
+#### DELETE /api/tasks/:id
+Supprimer une tâche
+
+
