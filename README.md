@@ -126,6 +126,38 @@ Example of tickets used:
 Create the CRUD for tasks
 Dockerize the API with MongoDB
 
+---
+
+## Unit Tests (task.test.js)
+Tests written for the Task model located in src/models/task.js using Jest.
+
+File location:
+
+tests/unit/task.test.js
+Description:
+
+The tests cover the following operations:
+
+#### Create: Creation of valid tasks and error handling (missing description)
+#### Read: Reading a task by ID, reading all tasks, handling non-existent IDs
+#### Update: Updating fields (status, title, description) and status validation
+
+Command to run the tests:
+```bash
+npm test
+```
+## CI/CD
+GitHub Actions
+
+A continuous integration workflow is set up using GitHub Actions. It runs the following steps on each push or pull request to the main branch:
+
+Install dependencies
+Start a MongoDB instance via Docker service
+Run unit tests
+Workflow file:
+```bash
+.github/workflows/node-ci.yml
+```
 
 # Evan MARTIN
 
