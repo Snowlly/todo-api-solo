@@ -4,9 +4,9 @@ const Task = require('./src/models/task');
 describe('Task Model', () => {
 
     beforeAll(async () => {
-        await mongoose.connect('mongodb://localhost:27017/test_db', {
+        await mongoose.connect(process.env.MONGO_URL || 'mongodb://localhost:27017/test_db', {
             useNewUrlParser: true,
-            useUnifiedTopology: true
+            useUnifiedTopology: true,
         });
     });
 
