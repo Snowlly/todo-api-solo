@@ -1,3 +1,6 @@
+![Node.js CI](https://github.com/Snowlly/todo-api-solo/actions/workflows/node-ci.yml/badge.svg)
+
+
 # Todo API - Solo DevOps Project
 
 ## Objectives:
