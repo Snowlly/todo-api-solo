@@ -143,9 +143,9 @@ tests/unit/task.test.js
 
 The tests cover the following operations:
 
-#### Create: Creation of valid tasks and error handling (missing description)
-#### Read: Reading a task by ID, reading all tasks, handling non-existent IDs
-#### Update: Updating fields (status, title, description) and status validation
+**Create:** Creation of valid tasks and error handling (missing description)
+**Read:** Reading a task by ID, reading all tasks, handling non-existent IDs
+**Update:** Updating fields (status, title, description) and status validation
 
 Command to run the tests:
 ```bash
