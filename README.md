@@ -114,6 +114,10 @@ todo-api/
 ├── package.json
 └── README.md
 ```
+
+---
+
+
 ## Agile management (Kanban)
 
 GitHub Project (Kanban):
@@ -132,9 +136,10 @@ Dockerize the API with MongoDB
 Tests written for the Task model located in src/models/task.js using Jest.
 
 File location:
-
+```bash
 tests/unit/task.test.js
-Description:
+```
+### Description:
 
 The tests cover the following operations:
 
@@ -146,6 +151,9 @@ Command to run the tests:
 ```bash
 npm test
 ```
+
+---
+
 ## CI/CD
 GitHub Actions
 
@@ -159,6 +167,7 @@ Workflow file:
 .github/workflows/node-ci.yml
 ```
 
+---
 # Evan MARTIN
 
 
