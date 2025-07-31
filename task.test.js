@@ -152,4 +152,35 @@ describe('Task Model', () => {
         });
     });
 
+    // Delete a Task
+
+    describe('Delete', () => {
+        let task;
+
+        beforeEach(async () => {
+            task = new Task({
+                title: 'Task to delete',
+                description: 'Will be removed',
+                status: 'todo'
+            });
+            await task.save();
+        });
+
+        it('should delete a task by ID', async () => {
+            const deleted = await Task.findByIdAndDelete(task._id);
+            const found = await Task.findById(task._id);
+
+            expect(deleted).not.toBeNull();
+            expect(deleted._id.toString()).toBe(task._id.toString());
+            expect(found).toBeNull();
+        });
+
+        it('should return null when deleting a non-existing task', async () => {
+            const nonExistingId = new mongoose.Types.ObjectId();
+            const result = await Task.findByIdAndDelete(nonExistingId);
+
+            expect(result).toBeNull();
+        });
+    });
+
 });
